@@ -6,8 +6,8 @@ app.disable('x-powered-by')
 const PORT = process.env.PORT ?? 3000
 
 app.use((req, res, next) => {
-	console.log('Middleware')
-	next()
+  console.log('Middleware')
+  next()
 })
 
 app.get('/', (req, res) => {
